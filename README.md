@@ -21,7 +21,11 @@ Requirements for development environment on this project are: To have docker des
     ```
     ./vendor/bin/sail up --build
     ```
-    >To stop all containers
+    >To just stop container
+        ```
+        ./vendor/bin/sail stop
+        ``` 
+    >To stop and delete all containers
         ```
         ./vendor/bin/sail down
         ``` 
