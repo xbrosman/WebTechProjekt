@@ -18,5 +18,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::post('/octave', [Octave::class, 'show']);
-Route::get('/octave', [Octave::class, 'getForm']);
+Route::post('/octave', [Octave::class, 'updateOctave']);
+Route::get('/octave', [Octave::class, 'readOctave']);
