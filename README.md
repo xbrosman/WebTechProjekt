@@ -24,3 +24,15 @@ Requirements for development environment on this project are: To have docker des
         ```
         ./vendor/bin/sail down
         ``` 
+
+## Laravel operations:
+To create controller in laravel run:
+`./vendor/bin/sail artisan make:controller SomeController`
+
+To create all objects for database:
+`./vendor/bin/sail artisan make:model Octave -mfsc`
+    
+1) -m To create migration (Table) and run: `./vendor/bin/sail artisan migrate`
+2) -c To create controller
+3) -f To create factory (Data structure used in seeder)
+4) -s To create seed (Testing data)
