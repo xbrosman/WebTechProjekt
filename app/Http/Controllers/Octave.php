@@ -8,7 +8,7 @@ use Illuminate\Http\Request;
 class Octave extends Controller
 {
     public function readOctave(Request $request){
-        return view("octaveForm")->with(["response"=> null]);
+        return view("successLogin")->with(["response"=> null]);
     }
     
     public function updateOctave(Request $request)
@@ -18,6 +18,6 @@ class Octave extends Controller
         exec('octave');
         exec('octave --eval "pkg load control;' . $query . '"', $response);
 
-        return view("octaveForm")->with(["query"=>$query, "response"=>$response]);
+        return view("successLogin")->with(["query"=>$query, "response"=>$response]);
     }
 }
