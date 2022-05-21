@@ -7,7 +7,7 @@ use Illuminate\Http\Request;
 
 class Octave extends Controller
 {
-    public function getForm(Request $request){
+    public function readOctave(Request $request){
         return view("octaveForm")->with(["response"=> null]);
     }
     
