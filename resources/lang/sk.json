@@ -4,5 +4,9 @@
     "Made":"Vytvoril",
     "Send":"Odoslat",
     "Final assignment for the WEBTE2  used to calculate and simulate the tire suspension of a motor vehicle":"Finalne zadanie z predmetu WEBTE2 sluziace k vypoctu a simulacii tlmica kolesa motoroveho vozidla",
-    "Enter API_KEY":"Vlozte API kluc"
+    "Enter API_KEY":"Vlozte API kluc",
+    "Enter Email": "Zadajte email",
+    "Enter Password": "Zadajte heslo",
+    "Login": "Prihlasit",
+    "Logout": "Odhlasit"
 }

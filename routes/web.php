@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Octave;
+use App\Http\Controllers\MainController;
 
 /*
 |--------------------------------------------------------------------------
@@ -20,3 +21,9 @@ Route::get('/', function () {
 
 Route::post('/octave', [Octave::class, 'updateOctave']);
 Route::get('/octave', [Octave::class, 'readOctave']);
+
+Route::get('/main', [MainController::class, 'index']);
+
+Route::post('/main/checkLogin', [MainController::class, 'checkLogin']);
+Route::get('/main/successLogin', [MainController::class, 'successLogin']);
+Route::get('/main/logout', [MainController::class, 'logout']);
