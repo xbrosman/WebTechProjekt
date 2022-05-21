@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 
 use Illuminate\Http\Request;
-use Config;
+use Illuminate\Support\Facades\Config;
 
 class Octave extends Controller
 {
@@ -14,7 +14,7 @@ class Octave extends Controller
     
     public function updateOctave(Request $request)
     {
-        if (strcmp($request->api_key ,Config::get('app.api_key')))
+        if (strcmp($request->api_key, Config::get('app.api_key')))
             return "Wrong API KEY!";
 
         $query = $request->input('query');   
