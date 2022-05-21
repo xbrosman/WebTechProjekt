@@ -21,7 +21,7 @@
 
     <div>
 
-        <form action="/octave" method="POST">
+        <form action="/octave?api_key={{ Config::get('app.api_key') }}" method="POST">
             @csrf
             <textarea class="form-control" id="input" name="query" rows="7">
                 @if (isset($query))
