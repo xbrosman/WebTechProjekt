@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use Validator;
-use Auth;
+use Illuminate\Validation\Validator;
+use Illuminate\Support\Facades\Auth;
 
 class MainController extends Controller
 {
