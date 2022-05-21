@@ -9,15 +9,21 @@
     </x-slot>
     <form action="/octave" method="POST">
             @csrf
-            <textarea class="form-control" id="input" name="query" rows="7"></textarea>
+            <textarea class="form-control" id="input" name="query" rows="7">
+            @if (isset($query))
+                {{ $query }}
+            @endif
+            </textarea>
            
             <button type="submit"  class="btn btn-primary btn-lg btn-block">{{__('Send')}}</button>
          
     </form>
     
     <textarea class="form-control" type="text" id="output" name="output" readonly rows="7">
-            @if ($response != null)
-                {{ $response }}
+            @if (isset($response))
+                 @foreach($response as $value)
+                     {{ $value }}
+                 @endforeach 
             @endif
         </textarea>
     <x-slot name="footer">
@@ -51,9 +57,9 @@
         </form>
         <br>
         <textarea name="" id="" cols="30" rows="10">
-            @if ($response != null)
+            {{-- @if ($response != null)
                 {{ $response }}
-            @endif
+            @endif --}}
         </textarea>
     </body>
 </html> -->

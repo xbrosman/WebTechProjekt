@@ -18,6 +18,6 @@ class Octave extends Controller
         exec('octave');
         exec('octave --eval "pkg load control;' . $query . '"', $response);
 
-        return view("octaveForm")->with(["response"=>json_encode($response)]);
+        return view("octaveForm")->with(["query"=>$query, "response"=>$response]);
     }
 }
