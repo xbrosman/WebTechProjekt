@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Csv;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Octave;
 use App\Http\Controllers\MainController;
@@ -21,6 +22,7 @@ Route::get('/', function () {
 
 Route::post('/octave', [Octave::class, 'updateOctave']);
 Route::get('/octave', [Octave::class, 'readOctave']);
+Route::get("/csv", [Csv::class, 'createCsv']);
 
 Route::get('/main', [MainController::class, 'index']);
 
