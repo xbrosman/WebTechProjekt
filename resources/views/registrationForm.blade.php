@@ -2,17 +2,19 @@
     <x-slot name="header">
         <br>
         <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-            {{ __('Login') }}
+            {{ __('Registration') }}
         </h2>
         <br>
     </x-slot>
+
+    @if (isset($success))
+        <div class="alert alert-success alert-block">
+            <strong>{{ $success }}</strong>
+        </div>
+    @endif
+
     <div class="pt-4">
 
-        @if (isset(Auth::user()->email))
-            <script>
-                window.location = "/main/successLogin";
-            </script>
-        @endif
 
         @if ($message = Session::get('error'))
             <div class="alert alert-danger alert-block">
@@ -30,8 +32,14 @@
                 </ul>
             </div>
         @endif
-        <form method="POST" action="{{ url('/main/checkLogin') }}">
+
+        <form method="POST" action="{{ url('/registration') }}">
             {{ csrf_field() }}
+            <div class="form-group">
+                <label>{{ __('Enter Name') }}</label>
+                <input type="text" name="name" class="form-control" />
+            </div>
+
             <div class="form-group">
                 <label>{{ __('Enter Email') }}</label>
                 <input type="email" name="email" class="form-control" />
@@ -43,8 +51,8 @@
             </div>
 
             <div class="form-group">
-                <input type="submit" name="login" class="btn btn-primary" value="{{ __('Login') }}" />
-                <a href="/registration" class="btn btn-secondary">{{ __('Registration') }}</a>
+                <input type="submit" name="login" class="btn btn-primary" value="{{ __('Register') }}" />
+                <a href="/main" class="btn btn-secondary">{{__('Login')}}</a>
             </div>
         </form>
     </div>

@@ -7,6 +7,9 @@
     "Enter API_KEY":"Vlozte API kluc",
     "Enter Email": "Zadajte email",
     "Enter Password": "Zadajte heslo",
+    "Enter Name": "Zadajte meno",
     "Login": "Prihlasit",
-    "Logout": "Odhlasit"
+    "Register": "Zaregistrovat sa",
+    "Logout": "Odhlasit",
+    "Registration": "Registracia"
 }
