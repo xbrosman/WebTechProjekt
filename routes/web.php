@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Csv;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Octave;
 use App\Http\Controllers\MainController;
@@ -35,6 +36,13 @@ Route::get('/main', [MainController::class, 'index']);
 Route::post('/main/checkLogin', [MainController::class, 'checkLogin']);
 Route::get('/main/successLogin', [MainController::class, 'successLogin']);
 Route::get('/main/logout', [MainController::class, 'logout']);
+
+
+Route::get('/registration', [RegistrationController::class, 'readRegistration']);
+Route::post('/registration', [RegistrationController::class, 'createRegistration']);
+
+Route::get('/csv', [Csv::class, 'createCsv']);
+
 
 
 Route::get('/registration', [RegistrationController::class, 'readRegistration']);
