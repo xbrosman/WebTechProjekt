@@ -45,3 +45,10 @@ Route::get('/csv/mail', [Csv::class, 'sendCsv']);
 
 Route::get('/registration', [RegistrationController::class, 'readRegistration']);
 Route::post('/registration', [RegistrationController::class, 'createRegistration']);
+
+Route::get('/csv', [Csv::class, 'createCsv']);
+
+
+
+Route::get('/registration', [RegistrationController::class, 'readRegistration']);
+Route::post('/registration', [RegistrationController::class, 'createRegistration']);
