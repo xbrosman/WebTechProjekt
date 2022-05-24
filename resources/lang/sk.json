@@ -33,7 +33,10 @@
     "Finalization":"Finalizácia projektu",
     "Main":"Domov",
     "API description":"Popis API",
-    "Download API description":"Vygeneruj API popis"
+    "Download API description":"Vygeneruj API popis",
+    "The endpoint used to export the description to PDF":"Endpoint slúžiaci k exportovaniu popisu API do PDF súboru",
+    "The endpoint used to change the language in which the page is displayed":"Endpoint slúžiaci k zmene jazyka, v ktorom je daná stránka zobrazovaná",
+    "The endpoint used to return to the application login home page":"Endpoint slúžiaci k návratu na domovskú obrazovku aplikácie"
 
 
 }
