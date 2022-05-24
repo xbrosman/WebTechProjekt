@@ -90,7 +90,7 @@ class Csv extends Controller
             $myEmail = 'webtechprojekt2022@gmail.com';
             Mail::to($myEmail)->send(new LogsMail());
 
-            return view("successLogin");
+            return view("successLogin")->with(["mailSuccess"=>"Odoslaný"]);
         } else
             return view("login");
     }

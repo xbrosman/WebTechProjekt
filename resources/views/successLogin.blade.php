@@ -21,6 +21,12 @@
                @endif
 
                <div>
+                   <a href="/csv" style="color:lightblue; margin-right:5%;">Stiahnut csv logy</a>
+                   <a href="/csv/mail" style="color:lightblue; margin-right:5%;">Poslať csv logy na mail</a>
+
+                   @if (isset($mailSuccess))
+                       <p style="color:lightgreen" name="mailResponse"><strong>Mail bol úspešne odoslaný</strong></p>
+                   @endif
 
                    <form action="/octave?api_key={{ Config::get('app.api_key') }}" method="POST">
                        @csrf
