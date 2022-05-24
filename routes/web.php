@@ -26,8 +26,6 @@ Route::get('/', function () {
     return Redirect('main');
 });
 
-Route::get('/', function () {    return view('welcome');    });
-
 Route::post('/octave', [Octave::class, 'updateOctave']);
 Route::get('/octave', [Octave::class, 'readOctave']);
 
