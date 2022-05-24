@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Octave;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\RegistrationController;
+use Illuminate\Support\Facades\Redirect;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,7 +18,7 @@ use App\Http\Controllers\RegistrationController;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return Redirect('main');
 });
 
 Route::post('/octave', [Octave::class, 'updateOctave']);
