@@ -34,7 +34,8 @@
                   
                </div>
                <div class="btn-group btn-lg btn-block">
-                    <a href="/main" class="btn btn-primary">{{__('Login')}}</a>
+                    <a href="/csv" class="btn btn-success">{{__('CSV logs download')}}</a>
+                    <a href="/csv/mail" class="btn btn-success">{{__('CSV logs send via email')}}</a>
                 </div>
                <x-slot name="footer">
                  
