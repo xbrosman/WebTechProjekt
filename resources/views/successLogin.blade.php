@@ -35,8 +35,6 @@
                </div>
 
                <x-slot name="footer">
-                   <div class="text-center p-3">
-                       © 2022 Copyright: Andrašovič, Baranec, Brosman, Teplanský
-                   </div>
+                 
                </x-slot>
        </x-app-layout>
