@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Config;
 
 class Csv extends Controller
 {
@@ -91,7 +92,9 @@ class Csv extends Controller
 
             Storage::disk('local')->put('public/webtech_projekt_log.csv', $csvString);
 
-            $myEmail = 'webtechprojekt2022@gmail.com';
+
+
+            $myEmail = Config::get('mail.mail_to');
             Mail::to($myEmail)->send(new LogsMail());
 
             return view("successLogin")->with(["mailSuccess"=>"Odoslaný"]);
