@@ -48,5 +48,7 @@
     "An endpoint used to authenticate and enroll a new user in the database":"Koncový bod slúžiaci  k overeniu a zápisu nového užívatela do databázy",
     "An endpoint used to export log data from a database":"Koncový bod slúžiaci na exportovanie údajov o logoch z databázy",
     "An endpoint used to export log data from a database and send it via email":"Koncový bod slúžiaci na exportovanie údajov o logoch z databázy a zaslanie prostredníctvom emailu",
-    "End point used to obtain data for simulating the movement of a motor vehicle wheel and the behavior of the obstacle damper according to the input value":"Koncový bod slúžiaci na získanie údajov pre simuláciu pohybu kolesa motorového vozidla a správania tlmica pre prechod prekážkou podla vstupnej hodnoty"
+    "End point used to obtain data for simulating the movement of a motor vehicle wheel and the behavior of the obstacle damper according to the input value":"Koncový bod slúžiaci na získanie údajov pre simuláciu pohybu kolesa motorového vozidla a správania tlmica pre prechod prekážkou podla vstupnej hodnoty",
+    "CSV logs download":"Stiahnutie CSV z logov",
+    "CSV logs send via email":"Zaslanie CSV z logov na mail"
 }
