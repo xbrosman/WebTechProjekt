@@ -36,6 +36,8 @@ Route::post('/main/checkLogin', [MainController::class, 'checkLogin']);
 Route::get('/main/successLogin', [MainController::class, 'successLogin']);
 Route::get('/main/logout', [MainController::class, 'logout']);
 
+Route::get('/csv', [Csv::class, 'createCsv']);
+Route::get('/csv/mail', [Csv::class, 'sendCsv']);
 
 Route::get('/registration', [RegistrationController::class, 'readRegistration']);
 Route::post('/registration', [RegistrationController::class, 'createRegistration']);
