@@ -25,7 +25,7 @@
                     @csrf -->
                         <label for=query> {{ __('Enter value in range -0.11 to 0.11') }}</label>
                         <br>
-                        <label for=query> {{ __('For right view of animation, let the animation end after 500. value of X') }}</label>
+                        <label for=query> {{ __('For right view of animation, let the animation end after 500. value of T') }}</label>
                         <input type="text" class="form-control" id="query" name="query">@if (isset($query)){{ $query }}@endif</input>
                         <button id="anim" class="btn btn-primary btn-lg btn-block">{{ __('Send') }}</button>
                     <!-- </form> -->
