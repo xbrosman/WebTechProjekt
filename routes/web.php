@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Octave;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\RegistrationController;
+use Illuminate\Support\Facades\Redirect;
 
 /*
 |--------------------------------------------------------------------------
@@ -18,8 +19,9 @@ use App\Http\Controllers\RegistrationController;
 
 Route::get('language/{locale}', function ($locale) {
     app()->setLocale($locale);
-    session()->put('locale', $locale);
-    return redirect()->back();
+    return redirect()->back();});
+Route::get('/', function () {
+    return Redirect('main');
 });
 
 Route::get('/', function () {    return view('welcome');    });
