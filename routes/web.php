@@ -7,6 +7,8 @@ use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\InfoController;
 use Illuminate\Support\Facades\Redirect;
 use App\Http\Controllers\PDFController;
+use App\Http\Controllers\AnimController;
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -41,3 +43,7 @@ Route::get('/main/logout', [MainController::class, 'logout']);
 
 Route::get('/registration', [RegistrationController::class, 'readRegistration']);
 Route::post('/registration', [RegistrationController::class, 'createRegistration']);
+
+Route::get('/car', [AnimController::class, 'index']);
+
+

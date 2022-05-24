@@ -29,6 +29,7 @@
                         <a href="/info" class="btn btn-secondary">{{ __('Info') }}</a>
                         <a href="/main" class="btn btn-secondary">{{ __('Main') }}</a>
                         <a href="/generate-pdf" class="btn btn-secondary">{{ __('Download API description') }}</a>
+                        <a href="/car" class="btn btn-secondary">{{ __('Car') }}</a>
                     </div>
                 </div>
             </header>
