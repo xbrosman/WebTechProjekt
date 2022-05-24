@@ -17,5 +17,6 @@ class PDFController extends Controller
         $pdf = PDF::loadView('myPDF', $data);
     
         return $pdf->download(__('API description').'.pdf');
+       // return view('myPDF');
     }
 }
