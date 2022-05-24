@@ -10,7 +10,7 @@
 
                @if (isset(Auth::user()->email))
                    <div class="alert alert-danger success-block">
-                       <strong>Welcome {{ Auth::user()->email }}</strong>
+                       <strong>{{ __('Welcome') }} {{ Auth::user()->email }}</strong>
                        <br />
                        <a href="{{ url('/main/logout') }}">{{ __('Logout') }}</a>
                    </div>

@@ -1,15 +1,17 @@
 {
     "Welcome":"Vitajte",
-    "You're logged in!":"Ste prihlaseny!",
+    "You're logged in!":"Ste prihlasený!",
     "Made":"Vytvoril",
-    "Send":"Odoslat",
-    "Final assignment for the WEBTE2  used to calculate and simulate the tire suspension of a motor vehicle":"Finalne zadanie z predmetu WEBTE2 sluziace k vypoctu a simulacii tlmica kolesa motoroveho vozidla",
-    "Enter API_KEY":"Vlozte API kluc",
+    "Send":"Odoslať",
+    "Final assignment for the WEBTE2  used to calculate and simulate the tire suspension of a motor vehicle":"Finálne zadanie z predmetu WEBTE2 slúžiace k výpočtu a simulácii tlmiča kolesa motorového vozidla",
+    "Enter API_KEY":"Vložte API klúč",
     "Enter Email": "Zadajte email",
     "Enter Password": "Zadajte heslo",
     "Enter Name": "Zadajte meno",
-    "Login": "Prihlasit",
-    "Register": "Zaregistrovat sa",
-    "Logout": "Odhlasit",
-    "Registration": "Registracia"
+    "Login": "Prihlásiť",
+    "Register": "Zaregistrovať sa",
+    "Logout": "Odhlásiť",
+    "Registration": "Registrácia",
+    "English":"Anglicky",
+    "Slovak": "Slovensky"
 }

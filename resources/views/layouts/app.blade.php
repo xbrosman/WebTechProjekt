@@ -33,6 +33,11 @@
             </main>
             <!-- Page Footer -->
             <footer class="bg-dark">
+                <div class="btn-group btn-lg btn-block">
+                <a href="/language/en" class="btn btn-secondary">{{ __('English') }}</a>
+                <a href="/language/sk" class="btn btn-secondary">{{ __('Slovak') }}</a>
+            
+            </div>
             {{ $footer }}
             </footer>
     </body>
