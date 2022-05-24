@@ -6,7 +6,7 @@ use App\Http\Controllers\MainController;
 use App\Http\Controllers\RegistrationController;
 use App\Http\Controllers\InfoController;
 use Illuminate\Support\Facades\Redirect;
-
+use App\Http\Controllers\PDFController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,7 +17,7 @@ use Illuminate\Support\Facades\Redirect;
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+Route::get('generate-pdf', [PDFController::class, 'generatePDF']);
 Route::get('language/{locale}', function ($locale) {
     app()->setLocale($locale);
     session()->put('locale', $locale);
