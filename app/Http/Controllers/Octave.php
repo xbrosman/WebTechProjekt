@@ -29,8 +29,7 @@ class Octave extends Controller
     {
         if (strcmp($request->api_key, Config::get('app.api_key')))
             return "Wrong API KEY!";
-        $query = $request->input('query');   
-
+        $q = strval($request->q);   
         $data = "m1 = 2500; m2 = 320;
         k1 = 80000; k2 = 500000;
         b1 = 350; b2 = 15020;
@@ -44,7 +43,7 @@ class Octave extends Controller
         sys = ss(Aa-Ba(:,1)*K,Ba,Ca,Da);
         
         t = 0:0.01:5;
-        r = " . $query . "0.1;
+        r = " . $q .";
         initX1=0;
         initX1d=0;
         initX2=0;
@@ -63,8 +62,6 @@ class Octave extends Controller
             'x2' => array($x3)
         );
         
-        // echo json_encode($data);
-
-        return json_encode($data);
+         return json_encode($data);
     }
 }
