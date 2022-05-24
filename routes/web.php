@@ -29,6 +29,8 @@ Route::get('/', function () {
 Route::get('/info', [InfoController::class, 'index']);
 Route::post('/octave', [Octave::class, 'updateOctave']);
 Route::get('/octave', [Octave::class, 'readOctave']);
+Route::post('/octave/car', [Octave::class, 'carAnim']);
+
 
 Route::get('/main', [MainController::class, 'index']);
 
