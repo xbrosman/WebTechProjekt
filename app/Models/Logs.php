@@ -12,6 +12,7 @@ class Logs extends Model
         'id',
         'user_id',
         'date',
-        'input'
+        'input',
+        'response'
     ];
 }
