@@ -24,13 +24,7 @@ class Octave extends Controller
         $logs = new Logs();
         $logs->user_id = auth::id();
         $logs->input = $query;
-<<<<<<< HEAD
-=======
-
-
->>>>>>> 7a9b9d7 (feat: catching response to logs)
-
-        //return var_dump($query);
+        
         exec('octave');
         exec('octave --eval "pkg load control;' . $query . '"', $response);
         if($response == null)

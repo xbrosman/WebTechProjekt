@@ -4,12 +4,16 @@ namespace App\Http\Controllers;
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 use App\Mail\LogsMail;
 =======
 >>>>>>> 6bac106 (feat: save and download csv file)
 =======
 use App\Mail\LogsMail;
 >>>>>>> 6cf050e (feat: sending mail to webtechprojekt2022@gmail.com)
+=======
+use App\Mail\LogsMail;
+>>>>>>> 4145c2031508a0697ee75ca513c7683d10cad28d
 use App\Models\Logs;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
@@ -17,6 +21,7 @@ use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 use Illuminate\Support\Facades\Config;
@@ -113,6 +118,9 @@ class Csv extends Controller
 =======
 use Illuminate\Support\Facades\Config;
 >>>>>>> 4053e0a (fix: get email from config)
+=======
+use Illuminate\Support\Facades\Config;
+>>>>>>> 4145c2031508a0697ee75ca513c7683d10cad28d
 
 class Csv extends Controller
 {
@@ -201,6 +209,7 @@ class Csv extends Controller
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
         return response()->stream($callback, 200, $headers);
 >>>>>>> 6bac106 (feat: save and download csv file)
 =======
@@ -211,6 +220,11 @@ class Csv extends Controller
         } else
             return view("login");
 >>>>>>> 6cf050e (feat: sending mail to webtechprojekt2022@gmail.com)
+=======
+            return view("successLogin")->with(["mailSuccess"=>"Odoslaný"]);
+        } else
+            return view("login");
+>>>>>>> 4145c2031508a0697ee75ca513c7683d10cad28d
     }
     //
 }
