@@ -190,10 +190,14 @@ class Csv extends Controller
             Mail::to($myEmail)->send(new LogsMail());
 
 <<<<<<< HEAD
+<<<<<<< HEAD
         return response()->stream($callback, 200, $headers);
 >>>>>>> 6bac106 (feat: save and download csv file)
 =======
             return view("successLogin");
+=======
+            return view("successLogin")->with(["mailSuccess"=>"Odoslaný"]);
+>>>>>>> 68a05c0 (feat: mail components)
         } else
             return view("login");
 >>>>>>> 6cf050e (feat: sending mail to webtechprojekt2022@gmail.com)
