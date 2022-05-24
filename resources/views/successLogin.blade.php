@@ -7,7 +7,7 @@
                <br>
            </x-slot>
            <div class="container box">
-
+                <br>
                @if (isset(Auth::user()->email))
                    <div class="alert alert-danger success-block">
                        <strong>{{ __('Welcome') }} {{ Auth::user()->email }}</strong>
@@ -31,9 +31,11 @@
                    </form>
 
                    <textarea class="form-control" type="text" id="output" name="output" readonly rows="7"> @if (isset($response))@foreach ($response as $value){{ $value }}@endforeach @endif</textarea>
-
+                  
                </div>
-
+               <div class="btn-group btn-lg btn-block">
+                    <a href="/main" class="btn btn-primary">{{__('Login')}}</a>
+                </div>
                <x-slot name="footer">
                  
                </x-slot>

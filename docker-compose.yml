@@ -43,7 +43,15 @@ services:
             test: [ "CMD", "mysqladmin", "ping", "-p${DB_PASSWORD}" ]
             retries: 3
             timeout: 5s
-   
+    composer:
+        image: composer:latest
+        container_name: composer
+        volumes:
+            - ./src:/var/www/html
+        working_dir: /var/www/html
+        networks:
+            - sail
+
 networks:
     sail:
         driver: bridge

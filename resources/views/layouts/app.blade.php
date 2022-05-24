@@ -28,6 +28,7 @@
                     <div class="btn-group btn-group-sm btn-lg btn-block">
                         <a href="/info" class="btn btn-secondary">{{ __('Info') }}</a>
                         <a href="/main" class="btn btn-secondary">{{ __('Main') }}</a>
+                        <a href="/generate-pdf" class="btn btn-secondary">{{ __('Download API description') }}</a>
                     </div>
                 </div>
             </header>
