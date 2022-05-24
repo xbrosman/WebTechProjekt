@@ -43,15 +43,15 @@
             </div>
 
             <div class="form-group">
-                <input type="submit" name="login" class="btn btn-primary" value="{{ __('Login') }}" />
-                <a href="/registration" class="btn btn-secondary">{{ __('Registration') }}</a>
+                <div class="btn-group btn-lg btn-block">
+                    <input type="submit" name="login" class="btn btn-primary" value="{{ __('Login') }}" />
+                    <a href="/registration" class="btn btn-primary">{{ __('Registration') }}</a>
+                </div>
             </div>
         </form>
     </div>
 
     <x-slot name="footer">
-        <div class="text-center p-3">
-            © 2022 Copyright: Andrašovič, Baranec, Brosman, Teplanský
-        </div>
+        
     </x-slot>
 </x-app-layout>

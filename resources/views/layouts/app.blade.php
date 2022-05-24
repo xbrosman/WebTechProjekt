@@ -22,8 +22,13 @@
 
             <!-- Page Heading -->
             <header class="bg-dark">
-                <div class="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
+                <div class=" text-center max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
                     {{ $header }}
+                </div class="align-center">
+                    <div class="btn-group btn-group-sm btn-lg btn-block">
+                        <a href="/info" class="btn btn-secondary">{{ __('Info') }}</a>
+                        <a href="/main" class="btn btn-secondary">{{ __('Main') }}</a>
+                    </div>
                 </div>
             </header>
 
@@ -33,12 +38,15 @@
             </main>
             <!-- Page Footer -->
             <footer class="bg-dark">
-                <div class="btn-group btn-lg btn-block">
+                <div class="btn-group  btn-group-sm btn-lg btn-block">
                 <a href="/language/en" class="btn btn-secondary">{{ __('English') }}</a>
                 <a href="/language/sk" class="btn btn-secondary">{{ __('Slovak') }}</a>
             
             </div>
             {{ $footer }}
+            <div class="text-center p-3">
+                       © 2022 Copyright: Andrašovič, Baranec, Brosman, Teplanský
+                   </div>
             </footer>
     </body>
 </html>

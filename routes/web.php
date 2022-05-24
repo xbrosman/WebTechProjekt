@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Octave;
 use App\Http\Controllers\MainController;
 use App\Http\Controllers\RegistrationController;
+use App\Http\Controllers\InfoController;
 use Illuminate\Support\Facades\Redirect;
 
 /*
@@ -25,7 +26,7 @@ Route::get('language/{locale}', function ($locale) {
 Route::get('/', function () {
     return Redirect('main');
 });
-
+Route::get('/info', [InfoController::class, 'index']);
 Route::post('/octave', [Octave::class, 'updateOctave']);
 Route::get('/octave', [Octave::class, 'readOctave']);
 

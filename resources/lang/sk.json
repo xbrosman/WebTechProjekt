@@ -13,5 +13,25 @@
     "Logout": "Odhlásiť",
     "Registration": "Registrácia",
     "English":"Anglicky",
-    "Slovak": "Slovensky"
+    "Slovak": "Slovensky",
+    "Technical data":"Technická správa",
+    "Info": "Informácie",
+    "All specification is inside docker file and in Readme.md on our github project":"Technická a užívateľská špecifikácia sa nachádza v súbore Dockerfile a v Readme.md súbore v github projekte",
+    "Work deal": "Rozdelenie úloh",
+    "Dual language": "Dvojjazyčnosť",
+    "API to CAS secured by API KEY":"API ku CAS zabezpečená API kľúčom",
+    "Animation":"Animácia",
+    "Not completed":"Nedokončené",
+    "Graph synchronized with animation":"Graf synchronizovaný s animáciou",
+    "Check API form":"Overenie API cez formulár",
+    "Logs exported to CSV + sending mail":"Exportovanie logov do CSV a posielanie cez mail",
+    "API description export to PDF":"Popis API a export do PDF",
+    "Synchronization access of multiple users":"Synchrónne sledovanei viacerých užívateľov",
+    "Docker wrapper":"Docker balíček",
+    "All members":"Všetci členovia tímu",
+    "Using github":"Všetci členovia",
+    "Finalization":"Finalizácia projektu",
+    "Main":"Domov"
+
+
 }
