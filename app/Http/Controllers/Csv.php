@@ -126,7 +126,7 @@ class Csv extends Controller
                 "Expires" => "0"
             );
 
-            $columns = array('user_id', 'input', 'updated_at');
+            $columns = array('user_id', 'input', 'updated_at', 'response');
 
 
             $callback = function () use ($logs, $columns) {
@@ -141,14 +141,16 @@ class Csv extends Controller
                     $row['user_id'] = $log->user_id;
                     $row['input'] = $log->input;
                     $row['updated_at'] = $log->updated_at;
+                    $row['response'] = $log->response;
 
-                    fputcsv($file, array($row['user_id'], $row['input'], $row['updated_at']));
+                    fputcsv($file, array($row['user_id'], $row['input'], $row['updated_at'], $row['response']));
                 }
                 return fgets($file);
             };
 
             return response()->stream($callback, 200, $headers);
         }
+        return view("login");
     }
 
     public function sendCsv(){
@@ -172,7 +174,7 @@ class Csv extends Controller
 
             $logs = Logs::all();
 
-            $columns = array('user_id', 'input', 'updated_at');
+            $columns = array('user_id', 'input', 'updated_at', 'response');
             $csvString = '';
             $csvString .= str_putcsv($columns)."\n";
             foreach ($logs as $log) {
@@ -180,8 +182,10 @@ class Csv extends Controller
                 $row['user_id'] = $log->user_id;
                 $row['input'] = $log->input;
                 $row['updated_at'] = $log->updated_at;
+                $row['response'] = $log->response;
 
-                $csvString .= str_putcsv(array($row['user_id'], $row['input'], $row['updated_at']))."\n";
+
+                $csvString .= str_putcsv(array($row['user_id'], $row['input'], $row['updated_at'], $row['response']))."\n";
             }
 
             Storage::disk('local')->put('public/webtech_projekt_log.csv', $csvString);
