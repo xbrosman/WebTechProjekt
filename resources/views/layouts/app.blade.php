@@ -16,6 +16,10 @@
     
         <!-- Scripts -->
         <script src="{{ asset('js/app.js') }}" defer></script>
+        <script src='https://cdn.plot.ly/plotly-2.12.1.min.js'></script>
+        <script src="https://unpkg.com/konva@8.3.5/konva.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
     </head>
     <body class="container bg-secondary text-white ">
     <br>
@@ -26,9 +30,12 @@
                     {{ $header }}
                 </div class="align-center">
                     <div class="btn-group btn-group-sm btn-lg btn-block">
+
                         <a href="/info" class="btn btn-info">{{ __('Info') }}</a>
                         <a href="/main" class="btn btn-info">{{ __('Main') }}</a>
                         <a href="/generate-pdf" class="btn btn-info">{{ __('Download API description') }}</a>
+                        <a href="/car" class="btn btn-info">{{ __('Car') }}</a>
+
                     </div>
                 </div>
             </header>
