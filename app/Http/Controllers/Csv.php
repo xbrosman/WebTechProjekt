@@ -18,6 +18,7 @@ use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Storage;
 <<<<<<< HEAD
+<<<<<<< HEAD
 use Illuminate\Support\Facades\Config;
 
 class Csv extends Controller
@@ -109,6 +110,9 @@ class Csv extends Controller
         } else
             return view("login");
 =======
+=======
+use Illuminate\Support\Facades\Config;
+>>>>>>> 4053e0a (fix: get email from config)
 
 class Csv extends Controller
 {
@@ -190,7 +194,9 @@ class Csv extends Controller
 
             Storage::disk('local')->put('public/webtech_projekt_log.csv', $csvString);
 
-            $myEmail = 'webtechprojekt2022@gmail.com';
+
+
+            $myEmail = Config::get('mail.mail_to');
             Mail::to($myEmail)->send(new LogsMail());
 
 <<<<<<< HEAD
