@@ -23,7 +23,9 @@
                <div>
                     <!-- <form action="/octave/car?api_key={{ Config::get('app.api_key') }}" method="POST">
                     @csrf -->
-                        <label for=query> Zadajte skok v tvare 0.1</label>
+                        <label for=query> {{ __('Enter value in range -0.11 to 0.11') }}</label>
+                        <br>
+                        <label for=query> {{ __('For right view of animation, let the animation end after 500. value of X') }}</label>
                         <input type="text" class="form-control" id="query" name="query">@if (isset($query)){{ $query }}@endif</input>
                         <button id="anim" class="btn btn-primary btn-lg btn-block">{{ __('Send') }}</button>
                     <!-- </form> -->
@@ -33,9 +35,6 @@
                     </div>
                     <div id="container"></div>
                </div>
-               <div class="btn-group btn-lg btn-block">
-                    <a href="/main" class="btn btn-primary">{{__('Login')}}</a>
-                </div>
                <x-slot name="footer">
                  
                </x-slot>

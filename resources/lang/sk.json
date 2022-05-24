@@ -50,5 +50,7 @@
     "An endpoint used to export log data from a database and send it via email":"Koncový bod slúžiaci na exportovanie údajov o logoch z databázy a zaslanie prostredníctvom emailu",
     "End point used to obtain data for simulating the movement of a motor vehicle wheel and the behavior of the obstacle damper according to the input value":"Koncový bod slúžiaci na získanie údajov pre simuláciu pohybu kolesa motorového vozidla a správania tlmica pre prechod prekážkou podla vstupnej hodnoty",
     "CSV logs download":"Stiahnutie CSV z logov",
-    "CSV logs send via email":"Zaslanie CSV z logov na mail"
+    "CSV logs send via email":"Zaslanie CSV z logov na mail",
+    "Enter value in range -0.11 to 0.11":"Zadajte hodnoty v rozsahu -0.11 do 0.11",
+    "For right view of animation, let the animation end after 500. value of X":"Pre správne vykreslovanie animácie, nechajte dokresliť animáciu až  po 500. hodnotu premennej X"
 }
