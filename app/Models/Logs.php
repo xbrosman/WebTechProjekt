@@ -12,11 +12,7 @@ class Logs extends Model
         'id',
         'user_id',
         'date',
-<<<<<<< HEAD
         'input',
         'response'
-=======
-        'input'
->>>>>>> d321eac (feat: making logs)
     ];
 }
