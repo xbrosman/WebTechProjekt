@@ -24,11 +24,19 @@ class Octave extends Controller
         $logs = new Logs();
         $logs->user_id = auth::id();
         $logs->input = $query;
-        $logs->save();
+
+
 
         //return var_dump($query);
         exec('octave');
         exec('octave --eval "pkg load control;' . $query . '"', $response);
+        if($response == null)
+            $logResponse = "error";
+        else
+            $logResponse = "correct";
+        $logs->response = $logResponse;
+        $logs->save();
+
 
         return view("successLogin")->with(["query"=>$query, "response"=>$response]);
     }
