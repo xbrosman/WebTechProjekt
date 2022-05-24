@@ -44,8 +44,17 @@
     <p>{{ __('The end point used to redirect to the registration form for the new user') }}</p>
     
     <Strong>POST  /registration</Strong>
-    <p>{{ __('
-An endpoint used to authenticate and enroll a new user in the database') }}</p>
+    <p>{{ __('An endpoint used to authenticate and enroll a new user in the database') }}</p>
+    
+    <Strong>GET  /csv</Strong>
+    <p>{{ __('An endpoint used to export log data from a database') }}</p>
+    
+    <Strong>GET  /csv/mail</Strong>
+    <p>{{ __('An endpoint used to export log data from a database and send it via email') }}</p>
+    
+    <Strong>POST  /octave/car</Strong>
+    <p>{{ __('End point used to obtain data for simulating the movement of a motor vehicle wheel and the behavior of the obstacle damper according to the input value') }}</p>
+    
     <br>
     <div class="text-center p-3">
      © 2022 Copyright: Andrašovic, Baranec, Brosman, Teplanský

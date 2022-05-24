@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Validator;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Database\QueryException;
 
 class MainController extends Controller
 {
@@ -23,13 +24,19 @@ class MainController extends Controller
             'password' => $request->get('password')
         );
 
-        if (Auth::attempt($user_data))
-        {
-            return redirect('main/successLogin');
+        try{
+
+            if (Auth::attempt($user_data))
+            {
+                return redirect('main/successLogin');
+            }
+            else
+            {
+                return back()->with('error', 'Wrong Login Details');
+            }
         }
-        else
-        {
-            return back()->with('error', 'Wrong Login Details');
+        catch(QueryException $e){
+            return back()->with('error', 'Error: '.$e->getCode());
         }
     }
 

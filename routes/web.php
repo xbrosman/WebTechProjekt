@@ -8,7 +8,7 @@ use App\Http\Controllers\InfoController;
 use Illuminate\Support\Facades\Redirect;
 use App\Http\Controllers\PDFController;
 use App\Http\Controllers\AnimController;
-
+use App\Http\Controllers\Csv;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -31,6 +31,7 @@ Route::get('/', function () {
 Route::get('/info', [InfoController::class, 'index']);
 Route::post('/octave', [Octave::class, 'updateOctave']);
 Route::get('/octave', [Octave::class, 'readOctave']);
+
 Route::post('/octave/car', [Octave::class, 'carAnim']);
 
 
@@ -40,6 +41,8 @@ Route::post('/main/checkLogin', [MainController::class, 'checkLogin']);
 Route::get('/main/successLogin', [MainController::class, 'successLogin']);
 Route::get('/main/logout', [MainController::class, 'logout']);
 
+Route::get('/csv', [Csv::class, 'createCsv']);
+Route::get('/csv/mail', [Csv::class, 'sendCsv']);
 
 Route::get('/registration', [RegistrationController::class, 'readRegistration']);
 Route::post('/registration', [RegistrationController::class, 'createRegistration']);

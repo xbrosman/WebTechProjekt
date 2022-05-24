@@ -30,10 +30,12 @@
                     {{ $header }}
                 </div class="align-center">
                     <div class="btn-group btn-group-sm btn-lg btn-block">
-                        <a href="/info" class="btn btn-secondary">{{ __('Info') }}</a>
-                        <a href="/main" class="btn btn-secondary">{{ __('Main') }}</a>
-                        <a href="/generate-pdf" class="btn btn-secondary">{{ __('Download API description') }}</a>
-                        <a href="/car" class="btn btn-secondary">{{ __('Car') }}</a>
+
+                        <a href="/info" class="btn btn-info">{{ __('Info') }}</a>
+                        <a href="/main" class="btn btn-info">{{ __('Main') }}</a>
+                        <a href="/generate-pdf" class="btn btn-info">{{ __('Download API description') }}</a>
+                        <a href="/car" class="btn btn-info">{{ __('Car') }}</a>
+
                     </div>
                 </div>
             </header>
