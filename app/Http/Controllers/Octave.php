@@ -24,8 +24,12 @@ class Octave extends Controller
         $logs = new Logs();
         $logs->user_id = auth::id();
         $logs->input = $query;
+<<<<<<< HEAD
 
 
+=======
+        $logs->save();
+>>>>>>> d321eac (feat: making logs)
 
         //return var_dump($query);
         exec('octave');
